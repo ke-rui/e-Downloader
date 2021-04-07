@@ -78,7 +78,7 @@
         <OutArgument x:TypeArguments="x:String">[EmailServerAccount]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:GetOutlookMailMessages Filter="{x:Null}" TimeoutMS="{x:Null}" Account="[EmailServerAccount]" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="560,22.4" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="收件箱" MarkAsRead="False" Messages="[emailCollection]" OnlyUnreadMessages="True" Top="30" />
+    <ui:GetOutlookMailMessages Filter="{x:Null}" TimeoutMS="{x:Null}" Account="[EmailServerAccount]" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="560,22.4" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="收件箱" MarkAsRead="True" Messages="[emailCollection]" OnlyUnreadMessages="True" Top="30" />
     <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="560,1645.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[emailCollection]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="snm:MailMessage">
